@@ -26,6 +26,9 @@ function RegisterScreen() {
     const RegisterScreenBackground = styled.div`
       background: #323232;
       height:800px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
     `;
 
     const RegisterPadding=styled.div`
@@ -36,12 +39,14 @@ function RegisterScreen() {
     `
 
     return (
+        <div>
+        <Header/>
         <RegisterScreenBackground>
-            <Header/>
             <RegisterPadding>
                 <Register/>
             </RegisterPadding>
         </RegisterScreenBackground>
+        </div>
     );
 }
 

@@ -11,20 +11,23 @@
   font-family: "GmarketSans-Medium";
   src: url("./font/GmarketSansTTFMedium.ttf");
 }
-
+body {
+  overflow-x: hidden;
+}
 
 .App {
   text-align: center;
   background-color: #323232;
   font-family: GmarketSans-Bold;
-
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+body {
+  overflow-x: hidden;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -41,8 +44,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-
-
 }
 
 .App-link {
@@ -56,4 +57,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* 폰트 설정 */
+@font-face {
+  font-family: "GmarketSans-Bold";
+  src: url("./fonts/GmarketSansTTFBold.ttf");
+}
+@font-face {
+  font-family: "GmarketSans-Light";
+  src: url("./fonts/GmarketSansTTFLight.ttf");
+}
+@font-face {
+  font-family: "GmarketSans-Medium";
+  src: url("./fonts/GmarketSansTTFMedium.ttf");
 }

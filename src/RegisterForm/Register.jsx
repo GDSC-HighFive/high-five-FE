@@ -150,60 +150,8 @@ function Register() {
             }).then(function () {
                 // 항상 실행
             });
-
+        navigate("/list")
     }
-    //     const res = await axios({
-    //         headers: {
-    //             withCredentials: true,
-    //             "Access-Control-Allow-Origin": "http://localhost:3000",
-    //             'Accept': 'application/json',
-    //         },
-    //         method: 'post',
-    //         url: '/weather/recommend',
-    //         data:{
-    //
-    //         } set:
-    //                 {
-    //                     category: "모자",
-    //                     length: "린넨",
-    //                     fabric: "올",
-    //                     thick: "얇음",
-    //                 },
-    //                 {
-    //                     category: "상의1",
-    //                     length: "긴팔",
-    //                     fabric: "옷감",
-    //                     thick: "두꺼움"
-    //                 },
-    //                 {
-    //                     category: "상의2",
-    //                     length: "긴팔",
-    //                     fabric: "옷감",
-    //                     thick: "두꺼움"
-    //                 },
-    //                 {
-    //                     category: "상의3",
-    //                     length: "긴팔",
-    //                     fabric: "옷감",
-    //                     thick: "두꺼움"
-    //                 },
-    //                 {
-    //                     category: "하의",
-    //                     length: "긴팔",
-    //                     fabric: "옷감",
-    //                     thick: "두꺼움"
-    //                 },
-    //                 {
-    //                     category: "신발",
-    //                     length: "긴거",
-    //                     fabric: "린넨",
-    //                     thick: "두꺼움"
-    //                 }
-    //             ]
-    //
-    //  })
-    // }
-
 
     const HeaderMainText=styled.h1`
         color: white;
@@ -224,27 +172,7 @@ function Register() {
             <form onSubmit={onSubmit}>
                 <div className={style.infoWrap}>
                     <InfoBox>
-                        <HeaderMainText><img src={hatImg} style={{width:"40px"}}/>모자</HeaderMainText>
-                        <div className={style.registerBox}>
-                            <p>
-                                <ContentSpanText>모자 종류</ContentSpanText>
-                                <Select
-                                    labelInValue
-                                    defaultValue={{ value: "0", label: "모자 종류" }}
-                                    style={{
-                                        marginLeft: "20px",
-                                        width: "120px",
-                                    }}
-                                    bordered={true}
-                                    onChange={onChangeHat}
-                                >
-                                    <Option value="없음">없음</Option>
-                                    <Option value="얇음">얇음</Option>
-                                    <Option value="두꺼움">두꺼움</Option>
-                                </Select>
-                            </p>
-                        </div>
-                        <img src={character2} style={{width:"250px", marginTop:"20px"}}/>
+                        <img src={character2} style={{width:"350px" ,position:"relative", top:"80px", left:"-50px"}}/>
                     </InfoBox>
                     <InfoBox>
                         <HeaderMainText><img src={clothesImg} style={{width:"40px"}}/>첫번째 상의</HeaderMainText>
@@ -254,6 +182,10 @@ function Register() {
                                 <Select
                                     labelInValue
                                     defaultValue={{ value: "0", label: "상의 길이" }}
+                                    bordered={true}
+                                    dropdownStyle={{
+                                        borderRadius:"20px",
+                                    }}
                                     style={{
                                         marginLeft: "5px",
                                         width: "120px",
@@ -494,28 +426,6 @@ function Register() {
                             </p>
                         </div>
                     </InfoBox>
-                    <InfoBox>
-                        <HeaderMainText><img src={shoesImg} style={{width:"40px"}}/>신발</HeaderMainText>
-                        <div className={style.registerBox}>
-                            <p>
-                                <ContentSpanText>신발 종류</ContentSpanText>
-                                <Select
-                                    labelInValue
-                                    defaultValue={{ value: "0", label: "신발 종류" }}
-                                    style={{
-                                        marginLeft: "20px",
-                                        width: "120px",
-                                    }}
-                                    onChange={onChangeShoe}
-                                >
-                                    <Option value="없음">없음</Option>
-                                    <Option value="얇음">운동화/샌달</Option>
-                                    <Option value="두꺼움">구두/워커/부츠</Option>
-                                </Select>
-                            </p>
-                        </div>
-                        <img src={character1} style={{width:"200px", marginTop:"20px"}}/>
-                    </InfoBox>
                         {/*{*/}
                         {/*    checkArr.map((item, idx) => (*/}
                         {/*        <p className={style.checkList}>*/}
@@ -546,7 +456,7 @@ function Register() {
                        onChange={onChangeInputValue}
                 />
                 {!(inputValue) ?
-                    ( <input type="submit"/> )
+                    ( <input type="submit" style={{ cursor: 'pointer'}}/> )
                     : (<div>코디 이름을 입력해주세요!</div>)
 
 

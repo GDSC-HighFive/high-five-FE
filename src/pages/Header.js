@@ -2,7 +2,7 @@ import React, { useEffect, useContext, useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
-import LogoImg from "../img/logo_dreather.png";
+import LogoImg from "../img/logo.png";
 
 const Header = ({ isLogin }) => {
   const navigate = useNavigate();
@@ -34,7 +34,6 @@ const Container = styled.div`
   width: 100vw;
   height: 6.69em;
   overflow: hidden;
-  background: white;
 `;
 
 const LogoContainer = styled.div`

@@ -1,45 +1,45 @@
 .container {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    background-color:#323232 ;
-    font-family: GmarketSans-Bold;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  background-color: #323232;
+  font-family: GmarketSans-Bold;
 }
 
 .container .infoWrap {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    margin:15px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
 }
 
-.container label, .container p span {
-    margin-right: 8px;
-    font-family: "Gmarket Sans Bold";
-
+.container label,
+.container p span {
+  margin-right: 8px;
+  font-family: "Gmarket Sans Bold";
 }
 
 .container input {
-    outline: none;
-    color: #323232;
-    height:30px;
-    width:200px;
-    border: 1px solid gray;
-    border-radius: 20px;
-    margin-bottom: 30px;
+  outline: none;
+  color: #323232;
+  height: 30px;
+  width: 200px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin-bottom: 30px;
 }
 
-.container .registerBox{
-    background: linear-gradient(130deg, white, 10%, #323232);
-    padding : 30px;
-    margin:15px;
-    border-radius: 20px;
+.container .registerBox {
+  background: linear-gradient(130deg, white, 10%, #323232);
+  padding: 30px;
+  margin: 15px;
+  border-radius: 20px;
 }
 
-.span{
-    margin:40px;
+.span {
+  margin: 40px;
 }
 
 input[type="radio"] {
-    margin: 0 8px;
+  margin: 0 8px;
 }
